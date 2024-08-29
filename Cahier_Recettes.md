@@ -66,86 +66,87 @@ Une fois validée, l'application sera approuvée pour le déploiement en product
 
 ---
 
-### 7. **Fonctionnalités Clés à Tester**
+### **7. Fonctionnalités Clés à Tester**
 
-7. Fonctionnalités Clés à Tester
+#### **7.1. Inscription**
 
-7.1. Inscription
-Cas de Test 1 : Inscription réussie avec des informations valides.
-Cas de Test 2 : Inscription échouée avec des informations manquantes ou invalides.
-Cas de Test 3 : Inscription échouée avec un email déjà utilisé.
+- **Cas de Test 1 :** Inscription réussie avec des informations valides.
+- **Cas de Test 2 :** Inscription échouée avec des informations manquantes ou invalides.
+- **Cas de Test 3 :** Inscription échouée avec un email déjà utilisé.
 
-7.2. Connexion
-Cas de Test 4 : Connexion réussie avec des identifiants corrects.
-Cas de Test 5 : Connexion échouée avec des identifiants incorrects.
-Cas de Test 6 : Connexion échouée avec un compte non confirmé.
-Cas de Test 7 : Réinitialisation du mot de passe via lien envoyé par email.
+#### **7.2. Connexion**
 
-7.3. Déconnexion
-Cas de Test 8 : Déconnexion réussie depuis l'interface utilisateur.
-Cas de Test 9 : Tentative de navigation après déconnexion.
+- **Cas de Test 1 :** Connexion réussie avec des identifiants corrects.
+- **Cas de Test 2 :** Connexion échouée avec des identifiants incorrects.
+- **Cas de Test 3 :** Connexion échouée avec un compte non confirmé.
+- **Cas de Test 4 :** Réinitialisation du mot de passe via lien envoyé par email.
 
-### **7.2. Consultation des Événements**
+#### **7.3. Déconnexion**
 
-- **Cas de Test 1** : Affichage correct de la liste des événements disponibles sans être connecté.
-- **Cas de Test 2** : Consultation des détails d'un événement spécifique.
-- **Cas de Test 3** : Utilisation des filtres pour rechercher des événements (par mots-clés, localisation, date, etc.).
-- **Cas de Test 4** : Consultation des événements non publics pour les utilisateurs connectés.
-- **Cas de Test 5** : Consultation des événements enregistrés par l'utilisateur.
-- **Cas de Test 6** : Consultation des événements auxquels l'utilisateur a participé.
-- **Cas de Test 7** : Consultation des événements organisés par l'utilisateur.
-- **Cas de Test 8** : Consultation des événements auxquels l'utilisateur a été invité.
-- **Cas de Test 9** : Consultation des événements archivés.
+- **Cas de Test 1 :** Déconnexion réussie depuis l'interface utilisateur.
+- **Cas de Test 2 :** Tentative de navigation après déconnexion.
 
-### **7.3. Création d'Événement**
+#### **7.4. Consultation des Événements**
 
-- **Cas de Test 1** : Création réussie d'un événement avec des informations valides.
-- **Cas de Test 2** : Modification des détails d'un événement existant.
-- **Cas de Test 3** : Suppression d'un événement créé.
-- **Cas de Test 4** : Gestion des erreurs lors de la création/modification (informations manquantes ou invalides).
-- **Cas de Test 5** : Vérification des permissions pour la création et la gestion d'événements.
-- **Cas de Test 6** : Validation des événements récurrents.
-- **Cas de Test 7** : Vérification de la gestion des événements privés et publics.
-- **Cas de Test 8** : Gestion des notifications liées aux événements.
-- **Cas de Test 9** : Vérification de la gestion des pièces jointes (images, documents) pour un événement.
-- **Cas de Test 10** : Vérification des contraintes de validation pour les champs obligatoires.
+- **Cas de Test 1 :** Affichage correct de la liste des événements disponibles sans être connecté.
+- **Cas de Test 2 :** Consultation des détails d'un événement spécifique.
+- **Cas de Test 3 :** Utilisation des filtres pour rechercher des événements (par mots-clés, localisation, date, etc.).
+- **Cas de Test 4 :** Consultation des événements non publics pour les utilisateurs connectés.
+- **Cas de Test 5 :** Consultation des événements enregistrés par l'utilisateur.
+- **Cas de Test 6 :** Consultation des événements auxquels l'utilisateur a participé.
+- **Cas de Test 7 :** Consultation des événements organisés par l'utilisateur.
+- **Cas de Test 8 :** Consultation des événements auxquels l'utilisateur a été invité.
+- **Cas de Test 9 :** Consultation des événements archivés.
 
-### **7.4. Participation à un Événement**
+#### **7.5. Création d'Événement**
 
-- **Cas de Test 1** : Inscription à un événement existant.
-- **Cas de Test 2** : Désinscription d'un événement avant sa date.
-- **Cas de Test 3** : Réception de la notification de participation confirmée.
-- **Cas de Test 4** : Gestion des inscriptions pour les événements avec places limitées.
-- **Cas de Test 5** : Participation à un événement récurrent.
-- **Cas de Test 6** : Participation à un événement payant.
-- **Cas de Test 7** : Gestion des événements complets (liste d'attente).
-- **Cas de Test 8** : Vérification des permissions pour la participation à des événements privés.
-- **Cas de Test 9** : Gestion des annulations d'événements par les organisateurs.
-- **Cas de Test 10** : Vérification de la participation à distance (événements en ligne).
+- **Cas de Test 1 :** Création réussie d'un événement avec des informations valides.
+- **Cas de Test 2 :** Modification des détails d'un événement existant.
+- **Cas de Test 3 :** Suppression d'un événement créé.
+- **Cas de Test 4 :** Gestion des erreurs lors de la création/modification (informations manquantes ou invalides).
+- **Cas de Test 5 :** Vérification des permissions pour la création et la gestion d'événements.
+- **Cas de Test 6 :** Validation des événements récurrents.
+- **Cas de Test 7 :** Vérification de la gestion des événements privés et publics.
+- **Cas de Test 8 :** Gestion des notifications liées aux événements.
+- **Cas de Test 9 :** Vérification de la gestion des pièces jointes (images, documents) pour un événement.
+- **Cas de Test 10 :** Vérification des contraintes de validation pour les champs obligatoires.
 
-### **7.5. Commentaires et Notation**
+#### **7.6. Participation à un Événement**
 
-- **Cas de Test 1** : Publication d'un commentaire sur un événement.
-- **Cas de Test 2** : Modification et suppression d'un commentaire existant.
-- **Cas de Test 3** : Notation d'un événement.
-- **Cas de Test 4** : Modération des commentaires par un administrateur.
-- **Cas de Test 5** : Gestion des signalements de commentaires par les utilisateurs.
-- **Cas de Test 6** : Limitation des commentaires et notations multiples.
-- **Cas de Test 7** : Vérification des permissions de commentaires pour les utilisateurs non inscrits à un événement.
-- **Cas de Test 8** : Vérification de la visibilité des commentaires en fonction de la confidentialité de l'événement.
-- **Cas de Test 9** : Gestion des commentaires longs ou riches en contenu (formatage, liens, emojis, etc.).
-- **Cas de Test 10** : Limitation du nombre de commentaires par utilisateur sur un événement.
-- **Cas de Test 11** : Filtrage et recherche des commentaires.
+- **Cas de Test 1 :** Inscription à un événement existant.
+- **Cas de Test 2 :** Désinscription d'un événement avant sa date.
+- **Cas de Test 3 :** Réception de la notification de participation confirmée.
+- **Cas de Test 4 :** Gestion des inscriptions pour les événements avec places limitées.
+- **Cas de Test 5 :** Participation à un événement récurrent.
+- **Cas de Test 6 :** Participation à un événement payant.
+- **Cas de Test 7 :** Gestion des événements complets (liste d'attente).
+- **Cas de Test 8 :** Vérification des permissions pour la participation à des événements privés.
+- **Cas de Test 9 :** Gestion des annulations d'événements par les organisateurs.
+- **Cas de Test 10 :** Vérification de la participation à distance (événements en ligne).
 
-### **7.6. Notifications et Rappels**
+#### **7.7. Commentaires et Notation**
 
-- **Cas de Test 1** : Réception des notifications pour les nouveaux événements correspondant aux centres d'intérêt de l'utilisateur.
-- **Cas de Test 2** : Réception des rappels avant un événement auquel l'utilisateur est inscrit.
-- **Cas de Test 3** : Gestion des notifications lues/non lues.
-- **Cas de Test 4** : Gestion des préférences de notifications par l'utilisateur.
-- **Cas de Test 5** : Réception des notifications en fonction de la plateforme (web, mobile).
-- **Cas de Test 6** : Réception des notifications en temps réel.
-- **Cas de Test 7** : Gestion des rappels personnalisés par l'utilisateur.
+- **Cas de Test 1 :** Publication d'un commentaire sur un événement.
+- **Cas de Test 2 :** Modification et suppression d'un commentaire existant.
+- **Cas de Test 3 :** Notation d'un événement.
+- **Cas de Test 4 :** Modération des commentaires par un administrateur.
+- **Cas de Test 5 :** Gestion des signalements de commentaires par les utilisateurs.
+- **Cas de Test 6 :** Limitation des commentaires et notations multiples.
+- **Cas de Test 7 :** Vérification des permissions de commentaires pour les utilisateurs non inscrits à un événement.
+- **Cas de Test 8 :** Vérification de la visibilité des commentaires en fonction de la confidentialité de l'événement.
+- **Cas de Test 9 :** Gestion des commentaires longs ou riches en contenu (formatage, liens, emojis, etc.).
+- **Cas de Test 10 :** Limitation du nombre de commentaires par utilisateur sur un événement.
+- **Cas de Test 11 :** Filtrage et recherche des commentaires.
+
+#### **7.8. Notifications et Rappels**
+
+- **Cas de Test 1 :** Réception des notifications pour les nouveaux événements correspondant aux centres d'intérêt de l'utilisateur.
+- **Cas de Test 2 :** Réception des rappels avant un événement auquel l'utilisateur est inscrit.
+- **Cas de Test 3 :** Gestion des notifications lues/non lues.
+- **Cas de Test 4 :** Gestion des préférences de notifications par l'utilisateur.
+- **Cas de Test 5 :** Réception des notifications en fonction de la plateforme (web, mobile).
+- **Cas de Test 6 :** Réception des notifications en temps réel.
+- **Cas de Test 7 :** Gestion des rappels personnalisés par l'utilisateur.
 
 ---
 
@@ -2923,6 +2924,7 @@ Référez-vous à la section [3. Pré-Requis Généraux](#3-pré-requis-généra
   - **
 
 Modification réussie** : Le commentaire est modifié sans erreur, et les changements sont visibles immédiatement.
+
   - **Notification à l'utilisateur** : L'utilisateur est informé de la modification de son commentaire.
   - **Enregistrement de l'action** : L'action de modification est enregistrée pour traçabilité.
 
@@ -3140,11 +3142,13 @@ Référez-vous à la section [3. Pré-Requis Généraux](#3-pré-requis-généra
 - **Événement existant** : Assurez-vous qu'il existe un événement sur lequel l'utilisateur peut publier des commentaires longs ou enrichis.
 
 #### 4. **Critères d'Acceptation**
+
 - **Gestion correcte des commentaires longs** : L'utilisateur doit pouvoir publier des commentaires longs, et ceux-ci doivent s'afficher correctement sans être tronqués.
 - **Support des contenus riches** : Les commentaires contenant des liens, emojis, ou du formatage (gras, italique, etc.) doivent être correctement gérés et affichés.
 - **Protection contre les abus** : Le système doit empêcher les abus, tels que l'insertion de scripts ou d'éléments malveillants via les commentaires.
 
 #### 5. **Documentation des Risques**
+
 - **Commentaires tronqués** : Les commentaires longs pourraient être tronqués ou mal affichés.
 - **Problèmes de sécurité** : Les contenus riches pourraient être utilisés pour insérer des éléments malveillants ou scripts.
 
@@ -3196,10 +3200,12 @@ Référez-vous à la section [3. Pré-Requis Généraux](#3-pré-requis-généra
 - **Événement existant** : Assurez-vous qu'il existe un événement sur lequel l'utilisateur a déjà publié plusieurs commentaires.
 
 #### 4. **Critères d'Acceptation**
+
 - **Limitation du nombre de commentaires** : L'application doit imposer une limite au nombre de commentaires qu'un utilisateur peut publier sur un seul événement.
 - **Notification de la limite atteinte** : L'utilisateur doit être informé lorsqu'il atteint la limite de commentaires.
 
 #### 5. **Documentation des Risques**
+
 - **Commentaires excessifs** : Sans limitation, un utilisateur pourrait spammer la section des commentaires d'un événement.
 - **Problèmes de gestion des limites** : L'application pourrait ne pas notifier correctement l'utilisateur lorsqu'il atteint la limite.
 
@@ -3234,10 +3240,12 @@ Référez-vous à la section [3. Pré-Requis Généraux](#3-pré-requis-généra
 - **Commentaires multiples** : Assurez-vous qu'il existe un nombre suffisant de commentaires sur un événement pour permettre une recherche et un filtrage significatifs.
 
 #### 4. **Critères d'Acceptation**
+
 - **Fonction de recherche** : L'utilisateur doit pouvoir rechercher des commentaires spécifiques sur un événement en utilisant des mots-clés.
 - **Filtrage des commentaires** : L'utilisateur doit pouvoir filtrer les commentaires par date, pertinence, ou notation.
 
 #### 5. **Documentation des Risques**
+
 - **Résultats de recherche incorrects** : Les résultats de recherche pourraient ne pas correspondre aux critères spécifiés.
 - **Problèmes de filtrage** : Les filtres appliqués pourraient ne pas fonctionner correctement, affichant des commentaires hors du contexte demandé.
 
@@ -3291,11 +3299,13 @@ Référez-vous à la section [3. Pré-Requis Généraux](#3-pré-requis-généra
 - **Nouveaux événements** : Créez ou identifiez de nouveaux événements qui correspondent aux centres d'intérêt de l'utilisateur.
 
 #### 4. **Critères d'Acceptation**
+
 - **Réception des notifications** : L'utilisateur doit recevoir une notification lorsqu'un nouvel événement correspondant à ses centres d'intérêt est créé.
 - **Contenu pertinent** : La notification doit contenir des informations pertinentes sur l'événement (titre, date, lieu, etc.).
 - **Notification en temps réel** : La notification doit être envoyée peu de temps après la création de l'événement.
 
 #### 5. **Documentation des Risques**
+
 - **Notifications manquantes** : L'utilisateur pourrait ne pas recevoir de notification pour les nouveaux événements correspondant à ses centres d'intérêt.
 - **Notifications inappropriées** : L'utilisateur pourrait recevoir des notifications pour des événements qui ne correspondent pas à ses centres d'intérêt.
 
@@ -3333,11 +3343,13 @@ Référez-vous à la section [3. Pré-Requis Généraux](#3-pré-requis-généra
 - **Configuration des rappels** : Vérifiez que les rappels sont configurés pour être envoyés avant les événements.
 
 #### 4. **Critères d'Acceptation**
+
 - **Réception des rappels** : L'utilisateur doit recevoir un rappel avant l'événement auquel il est inscrit.
 - **Délai du rappel** : Le rappel doit être envoyé à l'utilisateur dans le délai configuré (par exemple, 24 heures avant l'événement).
 - **Contenu du rappel** : Le rappel doit inclure toutes les informations nécessaires pour l'événement (titre, heure, lieu, etc.).
 
 #### 5. **Documentation des Risques**
+
 - **Rappels manquants** : L'utilisateur pourrait ne pas recevoir de rappel avant un événement, entraînant une absence ou un retard.
 - **Délai incorrect** : Le rappel pourrait être envoyé trop tôt ou trop tard, ne donnant pas à l'utilisateur le temps nécessaire pour se préparer.
 
@@ -3371,11 +3383,13 @@ Référez-vous à la section [3. Pré-Requis Généraux](#3-pré-requis-généra
 Référez-vous à la section [3. Pré-Requis Généraux](#3-pré-requis-généraux).
 
 #### 4. **Critères d'Acceptation**
+
 - **Marquage comme lu/non lu** : Les notifications doivent pouvoir être marquées comme lues ou non lues par l'utilisateur.
 - **Affichage correct des statuts** : Les notifications non lues doivent être clairement différenciées (par exemple, en gras ou avec un indicateur visuel).
 - **Mise à jour instantanée** : Le statut de la notification doit se mettre à jour instantanément après l'action de l'utilisateur.
 
 #### 5. **Documentation des Risques**
+
 - **Problèmes de mise à jour** : Les notifications pourraient ne pas être correctement marquées comme lues ou non lues, ou leur statut pourrait ne pas se mettre à jour.
 - **Affichage incorrect** : Les notifications non lues pourraient ne pas être clairement différenciées des notifications lues.
 
@@ -3426,11 +3440,13 @@ Référez-vous à la section [3. Pré-Requis Généraux](#3-pré-requis-généra
 Référez-vous à la section [3. Pré-Requis Généraux](#3-pré-requis-généraux).
 
 #### 4. **Critères d'Acceptation**
+
 - **Modification des préférences** : L'utilisateur doit pouvoir configurer ses préférences de notifications, comme le type de notifications qu'il souhaite recevoir (email, notifications push, etc.).
 - **Enregistrement des préférences** : Les préférences de notifications doivent être enregistrées correctement et respectées par le système.
 - **Gestion des types de notifications** : L'utilisateur doit pouvoir activer ou désactiver les notifications pour certains types d'événements (par exemple, rappels, nouveaux événements, invitations).
 
 #### 5. **Documentation des Risques**
+
 - **Non-respect des préférences** : Les préférences de notifications pourraient ne pas être respectées, entraînant l'envoi de notifications non désirées.
 - **Problèmes d'enregistrement** : Les modifications apportées aux préférences de notifications pourraient ne pas être enregistrées correctement.
 
@@ -3466,11 +3482,13 @@ Référez-vous à la section [3. Pré-Requis Généraux](#3-pré-requis-généra
 - **Configuration des notifications** : Assurez-vous que les notifications sont activées pour toutes les plateformes pertinentes (web, mobile).
 
 #### 4. **Critères d'Acceptation**
+
 - **Notifications sur toutes les plateformes** : L'utilisateur doit recevoir des notifications sur toutes les plateformes où il est connecté (web, mobile).
 - **Synchronisation des statuts** : Le statut lu/non lu des notifications doit être synchronisé entre les différentes plateformes.
 - **Conformité aux préférences** : Les notifications doivent être envoyées selon les préférences de l'utilisateur pour chaque plateforme.
 
 #### 5. **Documentation des Risques**
+
 - **Problèmes de synchronisation** : Le statut des notifications pourrait ne pas être synchronisé correctement entre les différentes plateformes.
 - **Notifications manquantes** : L'utilisateur pourrait ne pas recevoir de notifications sur une plateforme spécifique.
 
@@ -3506,10 +3524,12 @@ Référez-vous à la section [3. Pré-Requis Généraux](#3-pré-requis-généra
 - **Compte utilisateur connecté** : Utilisez un compte utilisateur valide et connecté.
 
 #### 4. **Critères d'Acceptation**
+
 - **Notifications en temps réel** : L'utilisateur doit recevoir des notifications en temps réel, sans retard significatif.
 - **Performance stable** : La réception des notifications en temps réel ne doit pas être affectée par la charge ou la performance du serveur.
 
 #### 5. **Documentation des Risques**
+
 - **Retards dans la réception** : Les notifications pourraient être reçues avec un retard important, affectant leur utilité.
 - **Problèmes de performance** : La charge du serveur ou des problèmes de connectivité pourraient empêcher la réception en temps réel des notifications.
 
@@ -3540,10 +3560,12 @@ Référez-vous à la section [3. Pré-Requis Généraux](#3-pré-requis-généra
 Référez-vous à la section [3. Pré-Requis Généraux](#3-pré-requis-généraux).
 
 #### 4. **Critères d'Acceptation**
+
 - **Personnalisation des rappels** : L'utilisateur doit pouvoir personnaliser les rappels pour chaque événement (par exemple, choisir de recevoir un rappel 1 jour avant, 1 heure avant, etc.).
 - **Enregistrement des préférences** : Les rappels personnalisés doivent être enregistrés et respectés par le système.
 
 #### 5. **Documentation des Risques**
+
 - **Non-respect des préférences** : Les rappels pourraient être envoyés à des moments incorrects, ne respectant pas les préférences de l'utilisateur.
 - **Problèmes d'enregistrement** : Les préférences de rappels personnalisés pourraient ne pas être enregistrées correctement.
 

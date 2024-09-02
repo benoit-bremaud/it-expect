@@ -1,92 +1,96 @@
-### 1. **Introduction**
+# Cahier Recette
 
-#### 1.1. Objectif du Document
+## 1. Introduction
+
+### 1.1. Objectif du Document
 
 Ce document a pour objectif de définir les critères et les procédures de validation des fonctionnalités de l'application HappiHub. Il servira de guide pour vérifier que toutes les exigences fonctionnelles et non fonctionnelles sont satisfaites avant le lancement en production.
 
-#### 1.2. Périmètre
+### 1.2. Périmètre
 
 Le périmètre du document couvre toutes les fonctionnalités majeures de l'application HappiHub, y compris les tests d'inscription, de connexion, de consultation d'événements, de création d'événements, de participation, de modération des commentaires, de notifications, et bien d'autres.
 
-### 2. **Contexte du Projet**
+## 2. Contexte du Projet
 
-#### 2.1. Présentation de HappiHub
+### 2.1. Présentation de HappiHub
 
 HappiHub est une plateforme de réseau social dédiée aux événements culturels. Elle permet aux utilisateurs de créer, partager, et participer à des événements, tout en favorisant l'engagement communautaire à travers des discussions, des commentaires, et des interactions sociales enrichissantes【29†source】.
 
-#### 2.2. Objectifs du Projet
+### 2.2. Objectifs du Projet
 
 - Faciliter la création et la gestion d'événements culturels.
 - Encourager la participation active des membres de la communauté.
 - Fournir une plateforme conviviale et accessible à un large public.
 - Créer une expérience utilisateur immersive et engageante【29†source】【31†source】.
 
-### 3. **Environnement de Recette**
+## 3. Environnement de Recette
 
-#### 3.1. Environnement de Développement
+### 3.1. Environnement de Développement
 
 L'environnement de développement est basé sur Docker pour garantir une configuration homogène et reproductible. Chaque service de l'application, y compris le frontend React.js, le backend Node.js avec Express.js, et la base de données MongoDB, est conteneurisé pour faciliter le déploiement et le test【33†source】.
 
-#### 3.2. Outils et Technologies Utilisés
+### 3.2. Outils et Technologies Utilisés
 
 - **IDE** : Visual Studio Code, avec des extensions comme ESLint et Prettier pour assurer la qualité du code【21†source】.
 - **Gestion de Version** : Git avec une gestion des branches via Git Flow pour structurer le développement et les tests【30†source】.
 - **Intégration Continue** : GitHub Actions pour automatiser les tests et les déploiements【27†source】.
 
-### 4. **Stratégie de Recette**
+## 4. Stratégie de Recette
 
-#### 4.1. Planification des Tests
+### 4.1. Planification des Tests
 
 Les tests seront planifiés selon les sprints de développement. Chaque sprint se concentrera sur un ensemble de fonctionnalités spécifiques (ex : authentification, création d'événements, notifications)【27†source】.
 
-#### 4.2. Critères de Validation
+### 4.2. Critères de Validation
 
 - **Fonctionnels** : Chaque fonctionnalité doit répondre aux exigences définies dans les cas d'utilisation et les diagrammes UML correspondants (diagrammes de séquence, d'activités, de composants, etc.)【20†source】【25†source】【26†source】.
 - **Non-Fonctionnels** : Les tests doivent vérifier la scalabilité, la compatibilité, et l'accessibilité de l'application, conformément aux exigences non fonctionnelles【22†source】.
 
-### 5. **Déroulement des Tests**
+## 5. Déroulement des Tests
 
-#### 5.1. Exécution des Tests
+### 5.1. Exécution des Tests
 
 Les tests seront exécutés dans un environnement contrôlé, utilisant les configurations définies dans Docker et Docker Compose. Chaque étape de test sera documentée et tracée pour assurer une couverture complète des fonctionnalités【33†source】.
 
-#### 5.2. Documentation des Résultats
+### 5.2. Documentation des Résultats
 
 Les résultats de chaque test seront consignés dans des rapports détaillés, incluant les éventuels dysfonctionnements rencontrés et les actions correctives entreprises. Les tests seront répétés jusqu'à ce que tous les critères de validation soient satisfaits.
 
-### 6. **Validation Finale**
+## 6. Validation Finale
 
-#### 6.1. Revue des Résultats
+### 6.1. Revue des Résultats
 
 Une revue finale des résultats de tous les tests sera effectuée par l'équipe de développement, en collaboration avec les parties prenantes, pour valider la conformité de l'application aux attentes du projet【27†source】.
 
-#### 6.2. Approbation et Mise en Production
+### 6.2. Approbation et Mise en Production
 
 Une fois validée, l'application sera approuvée pour le déploiement en production, en suivant les procédures définies dans le plan de déploiement【28†source】.
 
----
+## 7. Fonctionnalités Clés à Tester
 
-### **7. Fonctionnalités Clés à Tester**
+### 7.1. Authentification
 
-#### **7.1. Inscription**
+#### 7.1.1. Inscription
 
 - **Cas de Test 1 :** Inscription réussie avec des informations valides.
 - **Cas de Test 2 :** Inscription échouée avec des informations manquantes ou invalides.
 - **Cas de Test 3 :** Inscription échouée avec un email déjà utilisé.
 
-#### **7.2. Connexion**
+#### 7.1.2. Connexion
 
 - **Cas de Test 1 :** Connexion réussie avec des identifiants corrects.
 - **Cas de Test 2 :** Connexion échouée avec des identifiants incorrects.
 - **Cas de Test 3 :** Connexion échouée avec un compte non confirmé.
 - **Cas de Test 4 :** Réinitialisation du mot de passe via lien envoyé par email.
 
-#### **7.3. Déconnexion**
+#### 7.1.3. Déconnexion
 
 - **Cas de Test 1 :** Déconnexion réussie depuis l'interface utilisateur.
 - **Cas de Test 2 :** Tentative de navigation après déconnexion.
 
-#### **7.4. Consultation des Événements**
+### 7.2. Gestion Des Evenements
+
+#### 7.2.1. Consultation des Événements
 
 - **Cas de Test 1 :** Affichage correct de la liste des événements disponibles sans être connecté.
 - **Cas de Test 2 :** Consultation des détails d'un événement spécifique.
@@ -98,7 +102,7 @@ Une fois validée, l'application sera approuvée pour le déploiement en product
 - **Cas de Test 8 :** Consultation des événements auxquels l'utilisateur a été invité.
 - **Cas de Test 9 :** Consultation des événements archivés.
 
-#### **7.5. Création d'Événement**
+### 7.2.2. Création d'Événement
 
 - **Cas de Test 1 :** Création réussie d'un événement avec des informations valides.
 - **Cas de Test 2 :** Modification des détails d'un événement existant.
@@ -111,7 +115,7 @@ Une fois validée, l'application sera approuvée pour le déploiement en product
 - **Cas de Test 9 :** Vérification de la gestion des pièces jointes (images, documents) pour un événement.
 - **Cas de Test 10 :** Vérification des contraintes de validation pour les champs obligatoires.
 
-#### **7.6. Participation à un Événement**
+### 7.2.3. Participation à un Événement
 
 - **Cas de Test 1 :** Inscription à un événement existant.
 - **Cas de Test 2 :** Désinscription d'un événement avant sa date.
@@ -124,7 +128,9 @@ Une fois validée, l'application sera approuvée pour le déploiement en product
 - **Cas de Test 9 :** Gestion des annulations d'événements par les organisateurs.
 - **Cas de Test 10 :** Vérification de la participation à distance (événements en ligne).
 
-#### **7.7. Commentaires et Notation**
+## 7.3. Gestion Des Commentaires
+
+### 7.3.1. Commentaires et Notation
 
 - **Cas de Test 1 :** Publication d'un commentaire sur un événement.
 - **Cas de Test 2 :** Modification et suppression d'un commentaire existant.
@@ -138,7 +144,7 @@ Une fois validée, l'application sera approuvée pour le déploiement en product
 - **Cas de Test 10 :** Limitation du nombre de commentaires par utilisateur sur un événement.
 - **Cas de Test 11 :** Filtrage et recherche des commentaires.
 
-#### **7.8. Notifications et Rappels**
+### 7.3.2. Notifications et Rappels
 
 - **Cas de Test 1 :** Réception des notifications pour les nouveaux événements correspondant aux centres d'intérêt de l'utilisateur.
 - **Cas de Test 2 :** Réception des rappels avant un événement auquel l'utilisateur est inscrit.
@@ -147,14 +153,6 @@ Une fois validée, l'application sera approuvée pour le déploiement en product
 - **Cas de Test 5 :** Réception des notifications en fonction de la plateforme (web, mobile).
 - **Cas de Test 6 :** Réception des notifications en temps réel.
 - **Cas de Test 7 :** Gestion des rappels personnalisés par l'utilisateur.
-
----
-
-## **7.1. Inscription et Connexion**
-
-### **Cas de Test 1 : Inscription réussie avec des informations valides**
-
----
 
 #### 2.1 Présentation de la Fonctionnalité Clé
 
@@ -245,8 +243,6 @@ Voici le document détaillé pour le **Cas de Test 2 : Inscription échouée ave
 ---
 
 ### **Cas de Test 2 : Inscription échouée avec des informations manquantes ou invalides**
-
----
 
 #### 2.1 Présentation de la Fonctionnalité Clé
 
@@ -389,8 +385,6 @@ Voici le document détaillé pour le **Cas de Test 2 : Inscription échouée ave
 ---
 
 ### **Cas de Test 3 : Inscription échouée avec un email déjà utilisé**
-
----
 
 #### 2.1 Présentation de la Fonctionnalité Clé
 
